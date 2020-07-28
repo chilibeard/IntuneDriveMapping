@@ -1,5 +1,7 @@
 Welcome to the IntuneDriveMapping wiki!
 
+![image](https://user-images.githubusercontent.com/32899754/88683436-1750f280-d0f4-11ea-8397-6ac41b894b33.png)
+
 `UNC Path` enter the network path for your file share. Examples:
 
 * `\\ds.tech.nicolonsky.ch\dfsroot\public`
