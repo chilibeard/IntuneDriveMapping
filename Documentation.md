@@ -11,8 +11,11 @@ C:/ProgramData/intune-drive-mapping-generator/
 ┣ DriveMappping.ps1
 ┗ IntuneDriveMapping-VBSHelper.vbs
 ```
-Scheduled Task:
-/IntuneDriveMapping
+Scheduled task:
+
+`/IntuneDriveMapping`
+
+The scheduled task gets triggered on each logon and will invoke the `IntuneDriveMapping-VBSHelper.vbs` script (to suppress the PowerShell windows from appearing) which invokes the `DriveMappping.ps1` PowerShell script.
 
 ## Adding network drive mapping entries
 
