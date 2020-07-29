@@ -1,5 +1,18 @@
 Welcome to the IntuneDriveMapping wiki!
 
+## Architecture
+
+If you deploy the generated PowerShell script (with SYSTEM context) e.g. via Intune or any client management solution the following footprint get's created on your device:
+
+* Files:
+```
+C:/ProgramData/intune-drive-mapping-generator/
+┣ DriveMappping.ps1
+┗ IntuneDriveMapping-VBSHelper.vbs
+```
+* Scheduled Task:
+/IntuneDriveMapping
+
 ## Adding network drive mapping entries
 
 `UNC Path` enter the network path for your file share. Examples:
@@ -22,5 +35,3 @@ For troubleshooting get back to the log file which gets stored within the path: 
 ### Security group filtering
 
 Verify on a test machine the functionality of the `Get-ADGroupMembership` [function](https://github.com/nicolonsky/IntuneDriveMapping/blob/master/IntuneDriveMapping/wwwroot/bin/IntuneDriveMappingTemplate.ps1#L35). If you experience issues override the `$searchRoot` variable with your Active Directory Domain name.
-
-![image](https://user-images.githubusercontent.com/32899754/88683436-1750f280-d0f4-11ea-8397-6ac41b894b33.png)
