@@ -30,7 +30,7 @@ If you want to use environment variables use PowerShell environment variables:
 
 **Display Name** - reflects the name displayed in windows explorer.
 
-**Security Group Filter** - enter a sam account name of an on-premises Active Directory group the user needs to be a member of.
+**Security Group Filter** - enter the sAMAccountName **without domain prefix** of an on-premises Active Directory group the user needs to be a member of. 
 
 ## Troubleshooting
 
@@ -47,5 +47,7 @@ Ensure that authentication works and that you don't receive sign-in prompts. If 
 ### Security group filtering
 
 Verify on a test machine the functionality of the `Get-ADGroupMembership` [function](https://github.com/nicolonsky/IntuneDriveMapping/blob/master/IntuneDriveMapping/wwwroot/bin/IntuneDriveMappingTemplate.ps1#L35). If you experience issues override the `$searchRoot` variable with your Active Directory Domain name.
+
+* Ensure that you specified the sAMAccountName without domain name prefix
 
 **If your test machines don't have a value for the PowerShell environment variable `$env:USERDNSDOMAIN` you need to populate the `$searchRoot` variable in the script.**
