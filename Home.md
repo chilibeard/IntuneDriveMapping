@@ -47,3 +47,5 @@ Ensure that authentication works and that you don't receive sign-in prompts. If 
 ### Security group filtering
 
 Verify on a test machine the functionality of the `Get-ADGroupMembership` [function](https://github.com/nicolonsky/IntuneDriveMapping/blob/master/IntuneDriveMapping/wwwroot/bin/IntuneDriveMappingTemplate.ps1#L35). If you experience issues override the `$searchRoot` variable with your Active Directory Domain name.
+
+**If your test machines don't have a value for the PowerShell environment variable `$env:USERDNSDOMAIN` you need to populate the `$searchRoot` variable in the script.**
