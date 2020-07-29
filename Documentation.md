@@ -36,6 +36,14 @@ Security Group Filter - enter a sam account name of an on-premises Active Direct
 
 For troubleshooting get back to the log file which gets stored within the path: `%TEMP%\DriveMapping.log`.
 
+### Access to the network drives
+
+Verify access to the UNC path from a test machine. Also, have an eye on VPN connections and DNS resolution.
+
+### Authentication
+
+Ensure that authentication works and that you don't receive sign-in prompts. If you have Windows Hello for Business enabled that SSO is [properly configured](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base). 
+
 ### Security group filtering
 
 Verify on a test machine the functionality of the `Get-ADGroupMembership` [function](https://github.com/nicolonsky/IntuneDriveMapping/blob/master/IntuneDriveMapping/wwwroot/bin/IntuneDriveMappingTemplate.ps1#L35). If you experience issues override the `$searchRoot` variable with your Active Directory Domain name.
