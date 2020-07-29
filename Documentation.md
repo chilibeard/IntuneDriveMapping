@@ -2,15 +2,16 @@ Welcome to the IntuneDriveMapping wiki!
 
 ## Architecture
 
-If you deploy the generated PowerShell script (with SYSTEM context) e.g. via Intune or any client management solution the following footprint get's created on your device:
+If you deploy the generated PowerShell script (with SYSTEM context) e.g. via Intune or any client management solution the following footprint gets created on your device:
 
-* Files:
+Files:
+
 ```
 C:/ProgramData/intune-drive-mapping-generator/
 ┣ DriveMappping.ps1
 ┗ IntuneDriveMapping-VBSHelper.vbs
 ```
-* Scheduled Task:
+Scheduled Task:
 /IntuneDriveMapping
 
 ## Adding network drive mapping entries
