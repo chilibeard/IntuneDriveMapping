@@ -19,18 +19,18 @@ The scheduled task gets triggered on each logon and will invoke the `IntuneDrive
 
 ## Adding network drive mapping entries
 
-`UNC Path` enter the network path for your file share. Examples:
+**UNC Path** - enter the network path for your file share. Examples:
 
 * `\\ds.tech.nicolonsky.ch\dfsroot\public`
 
 If you want to use environment variables use PowerShell environment variables:
 * `\\ds.tech.nicolonsky.ch\dfsroot\homes\$env:username`
 
-Drive Letter - enter a character in the range of A-Z without the colon.
+**Drive Letter** - enter a character in the range of A-Z without the colon.
 
-Display Name - reflects the name displayed in windows explorer.
+**Display Name** - reflects the name displayed in windows explorer.
 
-Security Group Filter - enter a sam account name of an on-premises Active Directory group the user needs to be a member of.
+**Security Group Filter** - enter a sam account name of an on-premises Active Directory group the user needs to be a member of.
 
 ## Troubleshooting
 
