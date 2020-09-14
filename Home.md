@@ -32,6 +32,8 @@ If you want to use environment variables use PowerShell environment variables:
 
 **Security Group Filter** - enter the sAMAccountName **without domain prefix** of an on-premises Active Directory group the user needs to be a member of. 
 
+If you select the `remove stale drives` option before downloading the script, network drives not specified in the configuration get disconnected. This is useful if you want to automatically remove stale drives which are no longer required and/or maintained by your configuration.
+
 ## Troubleshooting
 
 For troubleshooting get back to the log file which gets stored within the path: `%TEMP%\DriveMapping.log`.
