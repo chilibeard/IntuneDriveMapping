@@ -9,7 +9,7 @@ Welcome to the IntuneDriveMapping wiki!
 If you want to use environment variables use PowerShell environment variables:
 * `\\ds.tech.nicolonsky.ch\dfsroot\homes\$env:username`
 
-**Drive Letter** - enter a character in the range of A-Z without the colon.
+**Drive Letter** - select a drive letter where the drive becomes available.
 
 **Display Name** - reflects the name displayed in windows explorer.
 
