@@ -16,9 +16,9 @@ Example:
 ]
 ```
 
-As a response you will receive the generated PowerShell script to map the network drives.
+As a response, you will receive the generated PowerShell script to map the network drives.
 
-Calling the API with PowerShell could look like this:
+Calling the API with PowerShell works like this:
 
 ```powershell
 $requestBody = '[{"Path":"\\\\test\\li","DriveLetter":"B","Label":"Test","Id":1,"GroupFilter":"TestGroup"}]'
