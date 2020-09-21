@@ -1,4 +1,4 @@
-Welcome to the IntuneDriveMapping wiki! Browse other wiki entries from the right navigation pane or get started with this page's howto.
+Welcome to the IntuneDriveMapping wiki! Browse other wiki entries from the right navigation pane or get started with this page.
 
 ## Adding network drive mapping entries
 
