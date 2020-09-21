@@ -16,4 +16,12 @@ Example:
 ]
 ```
 
-As response you will receive the generated PowerShell script to map the network drives.
+As a response you will receive the generated PowerShell script to map the network drives.
+
+Calling the API with PowerShell could look like this:
+
+```powershell
+$requestBody = '[{"Path":"\\\\test\\li","DriveLetter":"B","Label":"Test","Id":1,"GroupFilter":"TestGroup"}]'
+$requestUri = 'https://intunedrivemapping.azurewebsites.net/api/pstemplate'
+Invoke-RestMethod -Uri $requestUri -Method Post -Body $requestBody -ContentType "application/json"
+```
