@@ -1,22 +1,5 @@
 Welcome to the IntuneDriveMapping wiki!
 
-## Architecture
-
-If you deploy the generated PowerShell script (with SYSTEM context) e.g. via Intune or any client management solution the following footprint gets created on your device:
-
-Files:
-
-```
-C:/ProgramData/intune-drive-mapping-generator/
-┣ DriveMappping.ps1
-┗ IntuneDriveMapping-VBSHelper.vbs
-```
-Scheduled task:
-
-`/IntuneDriveMapping`
-
-The scheduled task gets triggered on each logon and will invoke the `IntuneDriveMapping-VBSHelper.vbs` script (to suppress the PowerShell windows from appearing) which invokes the `DriveMappping.ps1` PowerShell script.
-
 ## Adding network drive mapping entries
 
 **UNC Path** - enter the network path for your file share. Examples:
@@ -34,7 +17,7 @@ If you want to use environment variables use PowerShell environment variables:
 
 ## Download the script
 
-If you select the `remove stale drives` option before downloading the script, network drives not specified in the configuration get disconnected. This is useful if you want to automatically remove stale drives which are no longer required and/or maintained by your configuration.
+If you select the `remove stale drives` option before downloading the script, network drives not specified in the configuration gets disconnected. This is useful if you want to automatically remove stale drives which are no longer required and/or maintained by your configuration.
 
 ## Troubleshooting
 
