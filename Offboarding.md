@@ -9,4 +9,6 @@ Remove-Item -Path $scriptSavePath -Recurse -Force
 $schtaskName = "IntuneDriveMapping"
 Unregister-ScheduledTask -TaskName $schtaskName -Confirm:$false
 ```
-Note that the offboarding script won't delete the mapped network drives.
+
+Note that the offboarding script won't delete the mapped network drives, deleting mapped network drives needs to happen under the signed-in user's context.
+
