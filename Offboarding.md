@@ -12,6 +12,8 @@ Unregister-ScheduledTask -TaskName $schtaskName -Confirm:$false
 
 Note that the offboarding script won't delete the mapped network drives, deleting mapped network drives needs to happen under the signed-in user's context. If you want to do this, create an additional script with the following content and deploy it with the "Run this script using the logged on credentials" option:
 
+![image](https://user-images.githubusercontent.com/32899754/94411478-e71be380-0178-11eb-93c0-63f3205184c5.png)
+
 ```powershell
 #Remove all locally connected network drives
 $psDrives = Get-PSDrive | Where-Object { $_.Provider.Name -eq "FileSystem" -and $_.Root -notin @("$env:SystemDrive\", "D:\") }
