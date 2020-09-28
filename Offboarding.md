@@ -1,5 +1,8 @@
 If you want to offboard the solution you can replace your `DriveMapping.ps1` script in Intune with the following content:
 
+![image](https://user-images.githubusercontent.com/32899754/94411711-2c401580-0179-11eb-9e26-49501af32b7d.png)
+
+
 ```powershell
 # Remove scripts
 $scriptSavePath = $(Join-Path -Path $env:ProgramData -ChildPath "intune-drive-mapping-generator")
